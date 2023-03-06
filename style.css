@@ -1,0 +1,221 @@
+:root{
+    --yellow: rgb(226, 230, 0);
+    --black: rgba(0, 0, 0, 0.904);
+    --black_2:black;
+    --white: white;
+    --green: rgb(0, 255, 0);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url(https://img.freepik.com/free-vector/graphic-design-geometric-wallpaper_52683-34399.jpg?w=2000);
+    background-repeat:repeat;
+    background-size: cover;
+    width: auto;
+    height: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.head{
+    display: flexbox;
+    z-index: -1;
+    position: fixed;
+}
+
+.contain{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--yellow);
+    width: 100%;
+    height: 80px;
+    border: 2px solid var(--black);
+    box-shadow: 2px 0px 10px 2px var(--black);
+}
+.contain h1{
+    margin-right: 20px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px var(--white);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+}
+.contain ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 20px;
+}
+.contain li{
+    list-style: none;
+    font-size: large;
+    margin: 20px;
+    padding: 20px;
+    padding-right: 22px;
+    cursor: pointer;
+}
+.contain li:hover{
+    background-color: var(--black);
+    color: var(--yellow);
+}
+#home{
+    display: flex;
+}
+
+#home h1{
+    background-color: rgba(255, 166, 0, 0.8);
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+h1 p{
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: var(--white);
+    text-shadow: 2px 2px 2px var(--black_2);
+}
+
+.contain_bottom{
+    display: none;
+}
+.contain_bottom ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--white);
+    position: absolute;
+    z-index: 1;
+}
+
+.contain_bottom li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: large;
+    margin: 10px;
+    padding: 5px;
+    width: 90%;
+    padding-right: 12px;
+    cursor: pointer;
+}
+.contain_bottom li:hover{
+    background-color: var(--black);
+    color: var(--yellow);
+}
+
+.foot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--black_2);
+    width: 100%;
+    color: var(--white);
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    padding: 0;
+}
+.foot ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 20px;
+}
+.foot li{
+    list-style: none;
+    font-size: large;
+    margin: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 20px;
+    padding-right: 22px;
+    cursor: pointer;
+}
+li a{
+    text-decoration: none;
+    color: var(--white);
+}
+li a:hover{
+    color: var(--yellow);
+}
+
+ion-icon{
+    transform: scale(2);
+    color: black;
+    display: none;
+    padding: 2px;
+}
+ion-icon:hover{
+    color: rgb(0, 110, 255);
+}
+
+
+
+
+@media only screen and (max-width: 400px){
+    .foot{
+        width: 100%;
+    }
+    .foot li{
+        padding: px;
+    }
+    .foot ul{
+        margin: 0;
+    }
+    #home h1{
+        height: 90%;
+        width: 75%;
+    }
+    .contain ul{
+        display: none;
+    }
+    ion-icon{
+        display: flex;
+    }
+    h1 p{
+        font-size: 25px;
+    }
+    .foot{
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .foot{
+        width: 100%;
+    }   
+    .foot li{
+        padding: 8px;
+    }
+    .foot ul{
+        margin: 0;
+    }
+    #home h1{
+        height: 90%;
+        width: 75%;
+    }
+    .contain ul{
+        display: none;
+    }
+    ion-icon{
+        display: flex;
+    }
+    h1 p{
+        font-size: 25px;
+    }
+    .foot{
+        bottom: 0;
+    }
+}
